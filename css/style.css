@@ -6,9 +6,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:20px;
+    border-bottom: 2px solid black;
+    padding: 20px;
 }
 
+.header-wrapper >.nav-items {
+    display: flex;
+}
 nav img{
     width:5%;
     height:5%;
@@ -18,7 +22,7 @@ nav img{
     list-style-type:none;
 }
 
-.nav-items li{
+.nav-items button{
     display: inline;
     margin-right: 20px;
 }
@@ -52,5 +56,20 @@ header img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
 
+@media only screen and (max-width: 600px) {
+    .header-wrapper {
+    flex-direction: column;
+    }
+
+    .nav-items {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 14px;
+    }
 }
