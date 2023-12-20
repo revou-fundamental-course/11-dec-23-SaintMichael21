@@ -20,3 +20,17 @@ function setSenderUI(name,birthDate, gender, messages) {
     document.getElementById("sender-gender").innerHTML = gender;
     document.getElementById("sender-messages").innerHTML = messages;
 }
+
+// slider
+
+let currentindex = 0;
+const images = document.querySelectorAll(".img-slideshow")
+const totalImages = images.length
+
+function changeImage() {
+    images[currentindex].style.display = "none"
+    currentIndex = (currentindex + 1) % totalImages
+    images[currentindex].style.display = "block"
+}
+
+setInterval(changeImage, 2000)
