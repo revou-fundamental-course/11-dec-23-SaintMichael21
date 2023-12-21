@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Revou Fundamental Class</title>
+  </head>
+  <body>
+    <nav>
+      <img src="" alt="logo" class="logo" />
+      <ul class="hidden" id="navbar">
+        <a href="#" class="nav-item home" id="home">Home</a>
+        <a href="#our-profile" class="nav-item" id="ourProfile">Our Profile</a>
+        <a href="#vision" class="nav-item" id="visionMission">Vision</a>
+        <a href="#message-us" class="nav-item message" id="message"
+          >Message Us</a
+        >
+      </ul>
+      <img
+        src=""
+        alt="hamburger-menu"
+        class="hamburger-menu"
+        id="hamburger-menu"
+      />
+    </nav>
+
+    <header>
+      <h1>Hi <span id="halo-nama"></span>, Welcome To Our Website</h1>
+      <h4>School for bright our future</h4>
+      <img
+        src=""
+        alt="school"
+        class="school-building"
+      />
+    </header>
+
+    <!-- Our Profile -->
+
+    <section class="our-profile" id="our-profile">
+      <h2>Our Profile</h2>
+      <div class="list-profile">
+        <div class="profile">
+          <img src="" alt="canteen" />
+          <p>canteen</p>
+        </div>
+
+        <div class="profile">
+          <img src="" alt="field" />
+          <p>field</p>
+        </div>
+
+        <div class="profile">
+          <img src="" alt="lab" />
+          <p>laboratory</p>
+        </div>
+
+        <div class="profile">
+          <img src="" alt="class" />
+          <p>classroom</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="vision">
+      <img src="" alt="vision" class="vision" />
+      <div class="visimisi">
+        <div class="text">
+          <h3>Our Vision</h3>
+          <p>
+            To be a beacon of excellence, nurturing the leaders and innovators
+            of tomorrow
+          </p>
+        </div>
+        <div class="text">
+          <h3>Our Mission</h3>
+          <ol type="1">
+            <li>Academic Excellence</li>
+            <li>Character Development</li>
+            <li>Innovation and Creativity</li>
+            <li>Global Perspective</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Message Us -->
+
+    <section class="message" id="message-us">
+      <h2>Message Us</h2>
+      <div class="message-us">
+        <form name="message-form" onsubmit="return validateForm()">
+          <table>
+            <tr>
+              <td class="col-1"><p>Nama</p></td>
+              <td class="col-2"><p>:</p></td>
+              <td class="col-3">
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="Nama"
+                  name="name"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="col-1"><p>Tanggal Lahir</p></td>
+              <td class="col-2"><p>:</p></td>
+              <td class="col-3">
+                <input
+                  type="date"
+                  name="tanggal"
+                  id="date"
+                  nama="tanggal"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="col-1"><p>Jenis Kelamin</p></td>
+              <td class="col-2"><p>:</p></td>
+              <td class="col-3">
+                <input
+                  id="kelamin"
+                  type="radio"
+                  value="Laki-laki"
+                  class="jenis-kelamin"
+                  name="gender"
+                  required
+                />
+                <p>Laki-laki</p>
+                <input
+                  id="kelamin"
+                  type="radio"
+                  value="Perempuan"
+                  class="jenis-kelamin"
+                  name="gender"
+                  required
+                />
+                <p>Perempuan</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-1" style="vertical-align: top"><p>Pesan</p></td>
+              <td class="col-2" style="vertical-align: top"><p>:</p></td>
+              <td class="col-3">
+                <textarea
+                  id="pesan"
+                  name="message-from"
+                  cols="46"
+                  rows="10"
+                  required
+                ></textarea>
+              </td>
+            </tr>
+          </table>
+          <input type="submit" value="submit" class="submit-btn" id="submit" />
+        </form>
+        <div class="return" id="return">
+          <div class="returnText" id="returnText">
+            <p class="point">Current time : <span id="time-api"></span></p>
+            <br />
+            <p class="point">Nama : <span id="sender-name"></span></p>
+            <p class="point">
+              Tanggal Lahir : <span id="sender-birth-date"></span>
+            </p>
+            <p class="point">
+              Jenis Kelamin : <span id="sender-gender"></span>
+            </p>
+            <p class="point">Pesan : <span id="sender-message"></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Created By Saint Michael</p>
+    </footer>
+
+    <!-- Java Script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
